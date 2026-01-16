@@ -8,12 +8,16 @@ body {
 header {
   text-align:center; padding:20px; background:#2f4b67;
 }
-header img { max-height:80px; margin-bottom:10px; }
-h1 { font-weight:900; color:#fff; margin:0; }
+header img {
+  max-height: 150px; /* aumenta tamaño */
+  width: auto;        /* mantiene proporción */
+  margin-bottom: 15px; /* un poco más de espacio con el título */
+}
+
 
 /* Leyenda */
 .legend {
-  max-width:1200px; margin:10px auto;
+  max-width:1200px; margin:2px auto;
   display:flex; gap:15px; justify-content:center;
 }
 .legend-item {
