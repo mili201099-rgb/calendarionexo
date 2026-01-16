@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario Nexo - Enero 2026</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <img src="mockups/logo.png" alt="Logo Nexo">
+  <h1>Calendario Nexo - Enero 2026</h1>
+</header>
+
+<!-- Leyenda colores -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-color" style="background:#ff6f61;"></div>Historia</div>
+  <div class="legend-item"><div class="legend-color" style="background:#6fa8dc;"></div>Carrusel</div>
+  <div class="legend-item"><div class="legend-color" style="background:#f0c420;"></div>Reel</div>
+</div>
+
+<div class="calendar-container">
+  <div class="calendar">
+    <!-- Cuadrados vacíos iniciales para alinear jueves -->
+    <div class="day empty"></div>
+    <div class="day empty"></div>
+    <div class="day empty"></div>
+
+    <!-- Día 1 feriado -->
+    <div class="day feriado" data-day="1">
+      <div class="day-header">Jueves</div>
+      <div class="day-date">1/1/26</div>
+      <div class="ficha feriado">Feriado: Año Nuevo</div>
+    </div>
+
+    <!-- Días normales -->
+    <div class="day" data-day="2"><div class="day-header">Viernes</div><div class="day-date">2/1/26</div></div>
+    <div class="day" data-day="3"><div class="day-header">Sábado</div><div class="day-date">3/1/26</div></div>
+    <div class="day" data-day="4"><div class="day-header">Domingo</div><div class="day-date">4/1/26</div></div>
+
+    <!-- Día con publicaciones ejemplo -->
+    <div class="day" data-day="5" data-mockups='[{"type":"Historia","img":"mockups/story5.jpg","desc":"Tips de reparación"},{"type":"Carrusel","img":"mockups/carrusel5.jpg","desc":"Cómo funciona Nexo"},{"type":"Reel","img":"mockups/reel5.jpg","desc":"Promoción especial"}]'>
+      <div class="day-header">Lunes</div><div class="day-date">5/1/26</div>
+      <div class="ficha story"><img src="mockups/icon-story.png" alt="">Historia</div>
+      <div class="ficha carrusel"><img src="mockups/icon-carrusel.png" alt="">Carrusel</div>
+      <div class="ficha reel"><img src="mockups/icon-reel.png" alt="">Reel</div>
+    </div>
+
+    <!-- Días 6 al 31 igual, sin fichas -->
+    <div class="day" data-day="6"><div class="day-header">Martes</div><div class="day-date">6/1/26</div></div>
+    <div class="day" data-day="7"><div class="day-header">Miércoles</div><div class="day-date">7/1/26</div></div>
+    <div class="day" data-day="8"><div class="day-header">Jueves</div><div class="day-date">8/1/26</div></div>
+    <div class="day" data-day="9"><div class="day-header">Viernes</div><div class="day-date">9/1/26</div></div>
+    <div class="day" data-day="10"><div class="day-header">Sábado</div><div class="day-date">10/1/26</div></div>
+    <div class="day" data-day="11"><div class="day-header">Domingo</div><div class="day-date">11/1/26</div></div>
+    <div class="day" data-day="12"><div class="day-header">Lunes</div><div class="day-date">12/1/26</div></div>
+    <div class="day" data-day="13"><div class="day-header">Martes</div><div class="day-date">13/1/26</div></div>
+    <div class="day" data-day="14" data-mockups='[{"type":"Historia","img":"mockups/story14.jpg","desc":"Tips de reparación"},{"type":"Carrusel","img":"mockups/carrusel14.jpg","desc":"Cómo funciona Nexo"}]'>
+  <div class="day-header">Miércoles</div>
+  <div class="day-date">14/1/26</div>
+  <div class="ficha story"><img src="mockups/icon-story.png" alt="">Historia</div>
+  <div class="ficha carrusel"><img src="mockups/icon-carrusel.png" alt="">Carrusel</div>
+</div>
+
+<div class="day" data-day="15" data-mockups='[{"type":"Reel","img":"mockups/reel15.jpg","desc":"Promoción especial"}]'>
+  <div class="day-header">Jueves</div>
+  <div class="day-date">15/1/26</div>
+  <div class="ficha reel"><img src="mockups/icon-reel.png" alt="">Reel</div>
+</div>
+
+<div class="day" data-day="16"><div class="day-header">Viernes</div><div class="day-date">16/1/26</div></div>
+<div class="day" data-day="17"><div class="day-header">Sábado</div><div class="day-date">17/1/26</div></div>
+<div class="day" data-day="18"><div class="day-header">Domingo</div><div class="day-date">18/1/26</div></div>
+<div class="day" data-day="19"><div class="day-header">Lunes</div><div class="day-date">19/1/26</div></div>
+<div class="day" data-day="20"><div class="day-header">Martes</div><div class="day-date">20/1/26</div></div>
+<div class="day" data-day="21"><div class="day-header">Miércoles</div><div class="day-date">21/1/26</div></div>
+<div class="day" data-day="22"><div class="day-header">Jueves</div><div class="day-date">22/1/26</div></div>
+<div class="day" data-day="23"><div class="day-header">Viernes</div><div class="day-date">23/1/26</div></div>
+<div class="day" data-day="24"><div class="day-header">Sábado</div><div class="day-date">24/1/26</div></div>
+<div class="day" data-day="25"><div class="day-header">Domingo</div><div class="day-date">25/1/26</div></div>
+<div class="day" data-day="26"><div class="day-header">Lunes</div><div class="day-date">26/1/26</div></div>
+<div class="day" data-day="27"><div class="day-header">Martes</div><div class="day-date">27/1/26</div></div>
+<div class="day" data-day="28"><div class="day-header">Miércoles</div><div class="day-date">28/1/26</div></div>
+<div class="day" data-day="29"><div class="day-header">Jueves</div><div class="day-date">29/1/26</div></div>
+<div class="day" data-day="30"><div class="day-header">Viernes</div><div class="day-date">30/1/26</div></div>
+<div class="day" data-day="31"><div class="day-header">Sábado</div><div class="day-date">31/1/26</div></div>
+
+
+    <!-- Continúa hasta el 31, ejemplos con Story, Carrusel, Reel se agregan igual que día 5 -->
+    <!-- ... -->
+
+    <div class="day empty"></div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h2 id="modalTitle">Día X</h2>
+    <div id="mockupContainer"></div>
+    <div class="modal-buttons">
+      <button class="prev-btn" id="prevBtn">&larr; Día Anterior</button>
+      <button class="next-btn" id="nextBtn">Día Siguiente &rarr;</button>
+      <button class="close-btn" id="closeBtn">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2026 Nexo Reparaciones Integrales. Todos los derechos reservados.
+</footer>
+
+<!-- JS externo -->
+<script src="script.js"></script>
+</body>
+</html>

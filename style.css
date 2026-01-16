@@ -1,0 +1,89 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin:0; padding:0;
+  background:#2f4b67;
+  color:#fff;
+}
+
+header {
+  text-align:center; padding:20px; background:#2f4b67;
+}
+header img { max-height:80px; margin-bottom:10px; }
+h1 { font-weight:900; color:#fff; margin:0; }
+
+/* Leyenda */
+.legend {
+  max-width:1200px; margin:10px auto;
+  display:flex; gap:15px; justify-content:center;
+}
+.legend-item {
+  display:flex; align-items:center; gap:5px;
+  font-weight:700; font-size:14px;
+}
+.legend-color { width:15px; height:15px; border-radius:4px; }
+
+/* Calendario */
+.calendar-container {
+  max-width:1200px; margin:20px auto; padding:15px;
+  background:#fff; border-radius:12px; color:#000;
+}
+.calendar { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; }
+
+/* Días */
+.day {
+  background:#f8f8f8; border-radius:12px;
+  padding:10px; min-height:120px;
+  cursor:pointer; display:flex; flex-direction:column;
+  justify-content:flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.day:hover { transform: scale(1.03); box-shadow:0 5px 15px rgba(0,0,0,0.2); }
+.day-header { font-weight:700; margin-bottom:5px; font-size:14px; }
+.day-date { font-weight:900; font-size:18px; margin-bottom:8px; }
+.day.empty { background:#e0e0e0; pointer-events:none; }
+
+/* Fichas */
+.ficha {
+  border-radius:8px; padding:5px 8px; margin-bottom:5px;
+  color:#fff; font-weight:700; font-size:12px;
+  display:flex; align-items:center; justify-content:center;
+}
+.ficha img { width:14px; height:14px; margin-right:5px; }
+.ficha:hover { transform: translateY(-2px); box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+.ficha.story { background:#ff6f61; }
+.ficha.carrusel { background:#6fa8dc; }
+.ficha.reel { background:#f0c420; color:#000; }
+.ficha.feriado { background:#ff4b4b; font-size:10px; padding:3px 5px; text-align:center; }
+
+/* Feriados */
+.day.feriado { background:#ffd6d6; border:2px solid #ff4b4b; }
+.day.feriado .day-date { color:#b00000; }
+
+/* Modal */
+.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000; overflow-y:auto;
+}
+.modal-content {
+  background:#fff; color:#000; padding:20px; border-radius:15px; max-width:700px; width:90%;
+  position:relative; animation:popIn 0.3s ease-out;
+}
+@keyframes popIn {0%{transform:scale(0.7);opacity:0;}100%{transform:scale(1);opacity:1;}}
+.modal-content h2 { margin-top:0; font-weight:900; color:#2f4b67; }
+.mockup-card { margin:10px 0; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+.mockup-card img { width:100%; display:block; }
+.mockup-card p { margin:5px 10px; font-weight:400; }
+
+/* Botones modal */
+.close-btn,.prev-btn,.next-btn {
+  cursor:pointer; padding:10px 15px; border:none; border-radius:8px; font-weight:700; margin:5px;
+}
+.close-btn { background:#ff6f61; color:#fff; }
+.prev-btn,.next-btn { background:#2f4b67; color:#fff; }
+.modal-buttons { display:flex; justify-content:center; margin-top:10px; flex-wrap:wrap; }
+
+/* Footer */
+footer { background:#2f4b67; color:#fff; text-align:center; padding:15px; font-size:14px; margin-top:20px; }
+
+/* Responsive */
+@media(max-width:768px){ .calendar { grid-template-columns:repeat(4,1fr); } }
+@media(max-width:480px){ .calendar { grid-template-columns:repeat(2,1fr); } }
