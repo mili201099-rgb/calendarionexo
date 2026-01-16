@@ -166,7 +166,7 @@ footer { background:#2f4b67; color:#fff; text-align:center; padding:15px; font-s
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background: rgba(0,0,0,0.6);
+  background: #fff(0,0,0,0.6);
   color: #fff;
   padding: 6px 8px;
   border-radius: 50%;
