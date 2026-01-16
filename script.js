@@ -21,7 +21,21 @@ function openModal(index){
     mockups.forEach(m => {
       const card = document.createElement('div');
       card.classList.add('mockup-card');
-      card.innerHTML = `<img src="${m.img}" alt="${m.type}"><p>${m.type}: ${m.desc}</p>`;
+const img = document.createElement('img');
+img.src = m.img;
+img.alt = m.type;
+
+img.addEventListener('click', () => {
+  openImageViewer(m.img);
+});
+
+const text = document.createElement('p');
+text.innerHTML = `<strong>${m.type}:</strong><br><br>${m.desc}`;
+;
+
+card.appendChild(img);
+card.appendChild(text);
+
       mockupContainer.appendChild(card);
     });
   } else {
@@ -41,3 +55,22 @@ window.addEventListener('click', e => { if(e.target === modal) modal.style.displ
 // Navegar entre días
 prevBtn.addEventListener('click', ()=>{ let newIndex = currentDayIndex - 1; if(newIndex>=0) openModal(newIndex); });
 nextBtn.addEventListener('click', ()=>{ let newIndex = currentDayIndex + 1; if(newIndex<days.length) openModal(newIndex); });
+
+const imageViewer = document.getElementById('imageViewer');
+const imageViewerImg = document.getElementById('imageViewerImg');
+const imageClose = document.getElementById('imageClose');
+
+function openImageViewer(src) {
+  imageViewerImg.src = src;
+  imageViewer.style.display = 'flex';
+}
+
+imageClose.addEventListener('click', () => {
+  imageViewer.style.display = 'none';
+});
+
+imageViewer.addEventListener('click', (e) => {
+  if (e.target === imageViewer) {
+    imageViewer.style.display = 'none';
+  }
+});

@@ -45,14 +45,7 @@
     <div class="day" data-day="2"><div class="day-header">Viernes</div><div class="day-date">2/1/26</div></div>
     <div class="day" data-day="3"><div class="day-header">Sábado</div><div class="day-date">3/1/26</div></div>
     <div class="day" data-day="4"><div class="day-header">Domingo</div><div class="day-date">4/1/26</div></div>
-
-    <!-- Día con publicaciones ejemplo -->
-    <div class="day" data-day="5" data-mockups='[{"type":"Historia","img":"mockups/story5.jpg","desc":"Tips de reparación"},{"type":"Carrusel","img":"mockups/carrusel5.jpg","desc":"Cómo funciona Nexo"},{"type":"Reel","img":"mockups/reel5.jpg","desc":"Promoción especial"}]'>
-      <div class="day-header">Lunes</div><div class="day-date">5/1/26</div>
-      <div class="ficha story"><img src="mockups/icon-story.png" alt="">Historia</div>
-      <div class="ficha carrusel"><img src="mockups/icon-carrusel.png" alt="">Carrusel</div>
-      <div class="ficha reel"><img src="mockups/icon-reel.png" alt="">Reel</div>
-    </div>
+    <div class="day" data-day="4"><div class="day-header">Lunes</div><div class="day-date">5/1/26</div></div>
 
     <!-- Días 6 al 31 igual, sin fichas -->
     <div class="day" data-day="6"><div class="day-header">Martes</div><div class="day-date">6/1/26</div></div>
@@ -63,11 +56,24 @@
     <div class="day" data-day="11"><div class="day-header">Domingo</div><div class="day-date">11/1/26</div></div>
     <div class="day" data-day="12"><div class="day-header">Lunes</div><div class="day-date">12/1/26</div></div>
     <div class="day" data-day="13"><div class="day-header">Martes</div><div class="day-date">13/1/26</div></div>
-    <div class="day" data-day="14" data-mockups='[{"type":"Historia","img":"mockups/story14.jpg","desc":"Tips de reparación"},{"type":"Carrusel","img":"mockups/carrusel14.jpg","desc":"Cómo funciona Nexo"}]'>
+<div class="day" data-day="14"
+data-mockups='[
+  {
+    "type":"Historia",
+    "img":"Historias destacadas.png",
+    "desc":"Destacadas"
+  },
+  {
+    "type":"Carrusel",
+    "img":"Posteo 1.png",
+    "desc":"En NEXO conectamos tu necesidad con el profesional adecuado.<br><br>Para tu hogar, tu comercio o tu oficina, nos aseguramos de que cualquier reparación se resuelva rápido y sin complicaciones.<br><br>Atención clara y confiable, en un solo lugar.<br><br><strong>Nexo, conecta soluciones</strong><br><br>📩 Consultanos por mensaje y resolvé tu problema hoy"
+  }
+]'>
+
   <div class="day-header">Miércoles</div>
   <div class="day-date">14/1/26</div>
-  <div class="ficha story"><img src="mockups/icon-story.png" alt="">Historia</div>
-  <div class="ficha carrusel"><img src="mockups/icon-carrusel.png" alt="">Carrusel</div>
+  <div class="ficha story"><img src="Historias destacadas.png" alt="">Historia</div>
+  <div class="ficha carrusel"><img src="Posteo 1.png" alt="">Carrusel</div>
 </div>
 
 <div class="day" data-day="15" data-mockups='[{"type":"Reel","img":"mockups/reel15.jpg","desc":"Promoción especial"}]'>
@@ -113,6 +119,12 @@
     </div>
   </div>
 </div>
+<!-- Visor de imagen grande -->
+<div class="image-viewer" id="imageViewer">
+  <span class="image-close" id="imageClose">&times;</span>
+  <img id="imageViewerImg" src="" alt="Mockup ampliado">
+</div>
+
 
 <!-- Footer -->
 <footer>

@@ -73,7 +73,7 @@ header img {
 }
 @keyframes popIn {0%{transform:scale(0.7);opacity:0;}100%{transform:scale(1);opacity:1;}}
 .modal-content h2 { margin-top:0; font-weight:900; color:#2f4b67; }
-.mockup-card { margin:10px 0; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+.mockup-card { margin:10px 0; border-radius:10px; overflow: visible; box-shadow:0 3px 10px rgba(0,0,0,0.2);}
 .mockup-card img { width:100%; display:block; }
 .mockup-card p { margin:5px 10px; font-weight:400; }
 
@@ -91,3 +91,104 @@ footer { background:#2f4b67; color:#fff; text-align:center; padding:15px; font-s
 /* Responsive */
 @media(max-width:768px){ .calendar { grid-template-columns:repeat(4,1fr); } }
 @media(max-width:480px){ .calendar { grid-template-columns:repeat(2,1fr); } }
+
+.modal-content {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.mockup-card img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+}
+@media (min-width: 768px) {
+  #mockupContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+/* VISOR DE IMAGEN GRANDE */
+.image-viewer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-viewer img {
+  max-width: 95%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.image-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+#mockupContainer {
+  justify-items: center;
+}
+.mockup-card img {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+.mockup-card img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  filter: brightness(1.08);
+}
+.mockup-card {
+  position: relative;
+}
+
+.mockup-card::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.mockup-card:hover::after {
+  opacity: 1;
+}
+.mockup-card img {
+  cursor: pointer;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mockup-card img:hover {
+  transform: scale(1.035);
+  box-shadow:
+    0 0 0 2px rgba(47, 75, 103, 0.4),
+    0 0 45px 15px rgba(47, 75, 103, 0.45);
+}
+
