@@ -29,226 +29,206 @@
 
 <div class="calendar-container">
   <div class="calendar">
-    <!-- Cuadrados vacíos iniciales para alinear jueves -->
-      <div class="day empty"></div>
+    <!-- Marzo 2026, 1/03 es domingo -->
+    <!-- Ajuste de vacíos iniciales para alinear domingo -->
     <div class="day empty"></div>
     <div class="day empty"></div>
-     <div class="day empty"></div>
+    <div class="day empty"></div>
+    <div class="day empty"></div>
     <div class="day empty"></div>
     <div class="day empty"></div>
 
-<!-- Domingo 1 -->
-<div class="day" data-day="1">
-  <div class="day-header">Domingo</div>
-  <div class="day-date">1/2/26</div>
-</div>
+    <!-- Semana 1 -->
+    <!-- Domingo 1 -->
+    <div class="day" data-day="1">
+      <div class="day-header">Domingo</div>
+      <div class="day-date">1/3/26</div>
+    </div>
 
-<!-- Semana 1 -->
-<div class="day" data-day="2" data-mockups='[
-  {"type":"Reel","img":"Reel wallpanels.png","desc":"Trabajo con wallpanels"}
-]'>
-  <div class="day-header">Lunes</div>
-  <div class="day-date">2/2/26</div>
-  <div class="ficha reel">Reel</div>
-</div>
+    <!-- Lunes 2 / Reel -->
+    <div class="day" data-day="2" data-mockups='[
+      {"type":"Reel","img":"Reel ejemplo.png","desc":"Reel del día 2/3"}
+    ]'>
+      <div class="day-header">Lunes</div>
+      <div class="day-date">2/3/26</div>
+      <div class="ficha reel">Reel</div>
+    </div>
 
+    <!-- Martes 3 / Carrusel -->
 <div class="day" data-day="3" data-mockups='[
-  {"type":"Historia","img":"Historia repost.png","desc":"Repost del post + encuesta"}
+  {"type":"Carrusel","img":"Post ejemplo.png","desc":"Carrusel del día 3/3"},
+  {"type":"Historia","img":"Historia ejemplo.png","desc":"Historia del día 3/3"}
 ]'>
   <div class="day-header">Martes</div>
-  <div class="day-date">3/2/26</div>
+  <div class="day-date">3/3/26</div>
+  <div class="ficha carrusel">Carrusel</div>
   <div class="ficha story">Historia</div>
 </div>
 
-<div class="day" data-day="4" data-mockups='[
-  {"type":"Carrusel","img":"Profesionales.png","desc":"Profesionales que trabajan con NEXO"}
-]'>
-  <div class="day-header">Miércoles</div>
-  <div class="day-date">4/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-</div>
+    <!-- Miércoles 4 / Reel -->
+    <div class="day" data-day="4" data-mockups='[
+      {"type":"Reel","img":"Reel ejemplo.png","desc":"Reel del día 4/3"}
+    ]'>
+      <div class="day-header">Miércoles</div>
+      <div class="day-date">4/3/26</div>
+      <div class="ficha reel">Reel</div>
+    </div>
 
+    <!-- Jueves 5 -->
 <div class="day" data-day="5" data-mockups='[
-  {"type":"Historia","img":"Fragmento reel.png","desc":"Fragmento del reel + texto"}
+  {"type":"Historia","img":"Historia ejemplo.png","desc":"Historia del día 5/3"}
 ]'>
   <div class="day-header">Jueves</div>
-  <div class="day-date">5/2/26</div>
+  <div class="day-date">5/3/26</div>
   <div class="ficha story">Historia</div>
 </div>
 
-<div class="day" data-day="6" data-mockups='[
-  {"type":"Carrusel","img":"Avance obra.png","desc":"Avance de obra / antes y después"}
+    <div class="day" data-day="6" data-mockups='[
+  {"type":"Reel","img":"Reel ejemplo.png","desc":"Reel del día 6/3"}
 ]'>
   <div class="day-header">Viernes</div>
-  <div class="day-date">6/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
+  <div class="day-date">6/3/26</div>
+  <div class="ficha reel">Reel</div>
 </div>
 
+    <!-- Sábado 7 -->
 <div class="day" data-day="7" data-mockups='[
-  {"type":"Historia","img":"Profesional.png","desc":"Placa de profesional + pregunta"},
-  {"type":"Historia","img":"Obra frase.png","desc":"Foto de obra + frase"}
+  {"type":"Historia","img":"Historia ejemplo.png","desc":"Historia del día 7/3"}
 ]'>
   <div class="day-header">Sábado</div>
-  <div class="day-date">7/2/26</div>
-  <div class="ficha story">Historias</div>
-</div>
-
-<!-- Semana 2 -->
-<div class="day" data-day="8">
-  <div class="day-header">Domingo</div>
-  <div class="day-date">8/2/26</div>
-</div>
-
-<div class="day" data-day="9" data-mockups='[
-  {"type":"Reel","img":"Reel pileta.png","desc":"No dejes la limpieza de la pileta para noviembre"},
-  {"type":"Historia","img":"Teaser reel.png","desc":"Teaser del reel"}
-]'>
-  <div class="day-header">Lunes</div>
-  <div class="day-date">9/2/26</div>
-  <div class="ficha reel">Reel</div>
+  <div class="day-date">7/3/26</div>
   <div class="ficha story">Historia</div>
 </div>
 
-<div class="day" data-day="10">
-  <div class="day-header">Martes</div>
-  <div class="day-date">10/2/26</div>
-</div>
+    <!-- Semana 2 -->
+    <div class="day" data-day="8">
+      <div class="day-header">Domingo</div>
+      <div class="day-date">8/3/26</div>
+    </div>
 
-<div class="day" data-day="11" data-mockups='[
-  {"type":"Carrusel","img":"Tip.png","desc":"Tip corto"},
-  {"type":"Historia","img":"Tip texto.png","desc":"Tip en texto"}
-]'>
-  <div class="day-header">Miércoles</div>
-  <div class="day-date">11/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-  <div class="ficha story">Historia</div>
-</div>
+    <div class="day" data-day="9">
+      <div class="day-header">Lunes</div>
+      <div class="day-date">9/3/26</div>
+    </div>
 
-<div class="day" data-day="12">
-  <div class="day-header">Jueves</div>
-  <div class="day-date">12/2/26</div>
-</div>
+    <div class="day" data-day="10">
+      <div class="day-header">Martes</div>
+      <div class="day-date">10/3/26</div>
+    </div>
 
-<div class="day" data-day="13" data-mockups='[
-  {"type":"Carrusel","img":"Profesional destacado.png","desc":"Profesional destacado"},
-  {"type":"Historia","img":"Preguntas.png","desc":"Sticker de preguntas"}
-]'>
-  <div class="day-header">Viernes</div>
-  <div class="day-date">13/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-  <div class="ficha story">Historia</div>
-</div>
+    <div class="day" data-day="11">
+      <div class="day-header">Miércoles</div>
+      <div class="day-date">11/3/26</div>
+    </div>
 
-<div class="day" data-day="14" data-mockups='[
-  {"type":"Carrusel","img":"Proceso obra.png","desc":"Fotos de obra / proceso"},
-  {"type":"Historia","img":"Obra.png","desc":"Obra"}
-]'>
-  <div class="day-header">Sábado</div>
-  <div class="day-date">14/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-</div>
+    <div class="day" data-day="12">
+      <div class="day-header">Jueves</div>
+      <div class="day-date">12/3/26</div>
+    </div>
 
-<!-- Semana 3 -->
-<div class="day" data-day="15">
-  <div class="day-header">Domingo</div>
-  <div class="day-date">15/2/26</div>
-</div>
+    <div class="day" data-day="13">
+      <div class="day-header">Viernes</div>
+      <div class="day-date">13/3/26</div>
+    </div>
 
-<div class="day feriado" data-day="16" data-mockups='[
-  {"type":"Reel","img":"Consultorio.png","desc":"Consultorio terminado"},
-  {"type":"Historia","img":"Backstage.png","desc":"Backstage grabación"}
-]'>
-  <div class="day-header">Lunes</div>
-  <div class="day-date">16/2/26</div>
-  <div class="ficha feriado">Feriado</div>
-  <div class="ficha reel">Reel</div>
-</div>
+    <div class="day" data-day="14">
+      <div class="day-header">Sábado</div>
+      <div class="day-date">14/3/26</div>
+    </div>
 
-<div class="day feriado" data-day="17">
-  <div class="day-header">Martes</div>
-  <div class="day-date">17/2/26</div>
-  <div class="ficha feriado">Feriado</div>
-</div>
+    <!-- Semana 3 -->
+    <div class="day" data-day="15">
+      <div class="day-header">Domingo</div>
+      <div class="day-date">15/3/26</div>
+    </div>
 
-<div class="day" data-day="18" data-mockups='[
-  {"type":"Carrusel","img":"Proceso nexo.png","desc":"Proceso de trabajo de NEXO"}
-]'>
-  <div class="day-header">Miércoles</div>
-  <div class="day-date">18/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-</div>
+    <div class="day" data-day="16">
+      <div class="day-header">Lunes</div>
+      <div class="day-date">16/3/26</div>
+    </div>
 
-<div class="day" data-day="19">
-  <div class="day-header">Jueves</div>
-  <div class="day-date">19/2/26</div>
-</div>
+    <div class="day" data-day="17">
+      <div class="day-header">Martes</div>
+      <div class="day-date">17/3/26</div>
+    </div>
 
-<div class="day" data-day="20" data-mockups='[
-  {"type":"Historia","img":"Testimonios.png","desc":"Testimonios de clientes"}
-]'>
-  <div class="day-header">Viernes</div>
-  <div class="day-date">20/2/26</div>
-  <div class="ficha story">Historias</div>
-</div>
+    <div class="day" data-day="18">
+      <div class="day-header">Miércoles</div>
+      <div class="day-date">18/3/26</div>
+    </div>
 
-<div class="day" data-day="21" data-mockups='[
-  {"type":"Carrusel","img":"Consultorio final.png","desc":"Consultorio terminado"}
-]'>
-  <div class="day-header">Sábado</div>
-  <div class="day-date">21/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-</div>
+    <div class="day" data-day="19">
+      <div class="day-header">Jueves</div>
+      <div class="day-date">19/3/26</div>
+    </div>
 
-<!-- Semana 4 -->
-<div class="day" data-day="22">
-  <div class="day-header">Domingo</div>
-  <div class="day-date">22/2/26</div>
-</div>
+    <div class="day" data-day="20">
+      <div class="day-header">Viernes</div>
+      <div class="day-date">20/3/26</div>
+    </div>
 
-<div class="day" data-day="23" data-mockups='[
-  {"type":"Reel","img":"Casa terminada.png","desc":"Casa terminada / avance fuerte"}
-]'>
-  <div class="day-header">Lunes</div>
-  <div class="day-date">23/2/26</div>
-  <div class="ficha reel">Reel</div>
-</div>
+    <div class="day" data-day="21">
+      <div class="day-header">Sábado</div>
+      <div class="day-date">21/3/26</div>
+    </div>
 
-<div class="day" data-day="24" data-mockups='[
-  {"type":"Historia","img":"CTA.png","desc":"Reel + CTA"}
-]'>
-  <div class="day-header">Martes</div>
-  <div class="day-date">24/2/26</div>
-  <div class="ficha story">Historia</div>
-</div>
+    <!-- Semana 4 -->
+    <div class="day" data-day="22">
+      <div class="day-header">Domingo</div>
+      <div class="day-date">22/3/26</div>
+    </div>
 
-<div class="day" data-day="25">
-  <div class="day-header">Miércoles</div>
-  <div class="day-date">25/2/26</div>
-</div>
+    <div class="day" data-day="23">
+      <div class="day-header">Lunes</div>
+      <div class="day-date">23/3/26</div>
+    </div>
 
-<div class="day" data-day="26" data-mockups='[
-  {"type":"Carrusel","img":"Equipo.png","desc":"Equipo + profesionales"}
-]'>
-  <div class="day-header">Jueves</div>
-  <div class="day-date">26/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
-</div>
+    <div class="day" data-day="24">
+      <div class="day-header">Martes</div>
+      <div class="day-date">24/3/26</div>
+    </div>
 
-<div class="day" data-day="27" data-mockups='[
-  {"type":"Historia","img":"Equipo historia.png","desc":"Equipo"}
-]'>
-  <div class="day-header">Viernes</div>
-  <div class="day-date">27/2/26</div>
-  <div class="ficha story">Historia</div>
-</div>
+    <div class="day" data-day="25">
+      <div class="day-header">Miércoles</div>
+      <div class="day-date">25/3/26</div>
+    </div>
 
-<div class="day" data-day="28" data-mockups='[
-  {"type":"Carrusel","img":"Cierre febrero.png","desc":"Cierre de mes"},
-  {"type":"Historia","img":"Encuesta.png","desc":"Cierre febrero"}
-]'>
-  <div class="day-header">Sábado</div>
-  <div class="day-date">28/2/26</div>
-  <div class="ficha carrusel">Carrusel</div>
+    <div class="day" data-day="26">
+      <div class="day-header">Jueves</div>
+      <div class="day-date">26/3/26</div>
+    </div>
+
+    <div class="day" data-day="27">
+      <div class="day-header">Viernes</div>
+      <div class="day-date">27/3/26</div>
+    </div>
+
+    <div class="day" data-day="28">
+      <div class="day-header">Sábado</div>
+      <div class="day-date">28/3/26</div>
+    </div>
+
+    <!-- Semana 5 -->
+    <div class="day" data-day="29">
+      <div class="day-header">Domingo</div>
+      <div class="day-date">29/3/26</div>
+    </div>
+
+    <div class="day" data-day="30">
+      <div class="day-header">Lunes</div>
+      <div class="day-date">30/3/26</div>
+    </div>
+
+    <div class="day" data-day="31">
+      <div class="day-header">Martes</div>
+      <div class="day-date">31/3/26</div>
+    </div>
+
+    <!-- Cuadrados vacíos finales para completar semana -->
+    <div class="day empty"></div>
+    <div class="day empty"></div>
+    <div class="day empty"></div>
+  </div>
 </div>
 
 
